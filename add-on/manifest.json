@@ -33,6 +33,15 @@
     },
     {
       "matches": [
+        "*://beta.music.apple.com/*"
+      ],
+      "js": [
+        "dist/common.js",
+        "dist/sites/apple.js"
+      ]
+    },
+    {
+      "matches": [
         "*://*.youtube.com/*"
       ],
       "js": [

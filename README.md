@@ -10,6 +10,7 @@ The extension currently works with the following sites
 
 - Spotify (open.spotify.com)
 - Youtube (youtube.com)
+- Apple Music (beta.music.apple.com)
 
 ## Getting started
 
