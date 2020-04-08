@@ -89,6 +89,11 @@ class ApplePlayer extends Player {
                 let url = img.srcset.match(/\bhttps?:\/\/[^ ,]+/g).pop() || img.src;
                 this.set({art_url: url});
             }
+
+            const artist_album = document.querySelector('.web-chrome-playback-lcd__sub-copy-scroll[aria-hidden]');
+            if (artist_album !== null) {
+                this.set({artists: [artist_album.textContent.replace(/\s+/g, ' ').trim()]});
+            }
         });
         //console.log("Now playing observer");
         let observer = new MutationObserver((mutations) => {
